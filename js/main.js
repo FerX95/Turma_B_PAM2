@@ -1,13 +1,8 @@
-var flag = 0;
-
 function muda_cor(){
     let body = document.getElementById("bg");
+    let cores = ["#483D8B", "#2F4F4F", "#006400", "#556B2F", "#A0522D", 
+                 "#4B0082", "#8B008B", "#DC143C", "#8B0000", "#A52A2A"]
+    let x = Math.floor(Math.random() * 11);
 
-    if(flag == 0){
-        body.style.backgroundColor = "#3d828b";
-        flag = 1;
-    }else{
-        body.style.backgroundColor = "#483d8b";
-        flag = 0;
-    }
+    body.style.backgroundColor = cores[x];
 }
